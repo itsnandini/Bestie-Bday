@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="100%"
+      href="https://cdn-icons-png.flaticon.com/512/7434/7434648.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.12.0/matter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </head>
+
+  <style>
+    * {
+      margin: 0;
+      overflow: hidden;
+      font-family: "Quicksand", sans-serif;
+    }
+    html {
+      background-color: #eaf6f6;
+    }
+    h1 {
+      font-weight: 900;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      text-align: center;
+      font-size: 10vmin;
+      transform: translateX(-50.3%) translateY(-52%);
+      cursor: pointer;
+      background-color: inherit;
+    }
+    .switch input {
+      position: absolute;
+      opacity: 0;
+    }
+    .switch {
+      display: inline-block;
+      font-size: 20px;
+      height: 1em;
+      width: 2em;
+      background: #8443c1;
+      border-radius: 1em;
+    }
+    .switch div {
+      height: 1em;
+      width: 1em;
+      border-radius: 1em;
+      background: #fff;
+      box-shadow: 0 0.1em 0.3em rgba(0, 0, 0, 0.3);
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+    .switch input:checked + div {
+      -webkit-transform: translate3d(100%, 0, 0);
+      -moz-transform: translate3d(100%, 0, 0);
+      transform: translate3d(100%, 0, 0);
+    }
+  </style>
+  <body>
+    <a href="#" class="audio" style="color: #551a8b"
+      ><h1>
+        I love you, my fav idiot.
+        <div class="container">
+          <label class="switch"
+            ><input type="checkbox" id="switch" />
+            <div></div
+          ></label>
+        </div>
+      </h1>
+    </a>
+
+    <script src="js/index-3.js"></script>
+  </body>
+</html>
